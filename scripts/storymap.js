@@ -468,7 +468,7 @@ $(window).on('load', function() {
 
     $('#contents').append(" \
       <div id='space-at-the-bottom'> \
-        <a href='https://srcreyes.github.io/urban-peacebuilding/'>  \
+        <a href='https://srcreyes.github.io/urban-peacebuilding-demo/'>  \
           <i class='fas fa-home'></i></br> \
           <small> Home - Urban Peacebuilding </small>  \
         </a> \
