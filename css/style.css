@@ -1,0 +1,300 @@
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+  font-family: 'Cinzel', 'Proza Libre', serif;
+}
+
+body {
+  font-family: 'Proza Libre', serif;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.header {
+	grid-area: header;
+	padding:5px;
+	background-color: #333;
+	color: white;
+  font-family: 'Cinzel', serif;
+	font-size: 2em;
+}
+
+#map {
+  height: 200px;
+  width: 100vw;
+  position: absolute;
+  border-bottom: 3px solid orange;
+  top: 0;
+  left: 0;
+}
+
+#narration {
+  position: absolute;
+  font-family: 'Proza Libre', serif;
+  top: 203px;
+  width: 100vw;
+  height: calc(100vh - 203px);
+  z-index: 80;
+}
+
+#contents {
+  padding: 0;
+  width: 100%;
+  font-family: 'Cinzel', serif;
+  margin-top: 0; /*Adjust if Title header needs more space */
+  height: 100%; /* Adjust to fit max Description length, one setting for all; alternative is 100% */
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#top {
+  height: 100px;
+  margin: 0;
+}
+
+#space-at-the-bottom {
+  height: 200px;
+  margin: 0;
+  text-align: center;
+  padding-top: 150px;
+}
+
+#title {
+  position: absolute;
+  left: 0;
+  top: 203px;
+  background-color: white;
+  width: 100vw;
+  z-index: 100;
+  margin: 0;
+  padding: 0;
+  visibility: hidden;
+  font-family: 'Cinzel', serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.chapter-container {
+  /* margin + padding = chapterContainerMargin in script.js */
+  /* Important for scrolling! */
+  margin: 50px 0 0 0;
+  padding: 20px 0 0 0;
+  text-align: center;
+}
+
+.chapter-container img {
+  height: auto;
+  width: auto;
+  max-height: 100%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* Three lines that center vertically */
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.img-container {
+  margin: 0;
+  margin-bottom: 5px;
+  height: 200px;
+  max-height: 200px;
+  width: 100%;
+}
+
+.audio-container {
+  margin: 0;
+  margin-bottom: 5px;
+  height: 60px;
+  max-height: 60px;
+  width: 100%;
+}
+
+.chapter-header {
+  display: block;
+  font-family: 'Cinzel', serif;
+  text-align: center;
+  font-size: 1.5em;
+
+}
+
+.source {
+  font-size: 9pt;
+  font-style: italic;
+  color: white;
+}
+a.source:visited {
+  color: grey;
+}
+
+.description {
+  margin: 20px;
+  text-align: justify;
+  font-size: 11pt;
+  padding: 20px;
+  font-family: 'Proza Libre', sans-serif;
+}
+
+.in-focus {
+  opacity: 1.0;
+}
+
+.out-focus {
+  opacity: 0.3;
+}
+
+.leaflet-control-attribution {
+  visibility: hidden;
+}
+
+.leaflet-marker-icon {
+  opacity: 0.75;
+}
+
+/*
+  By default, current (active) marker is orange.
+  If you want to change the color, see options here: https://github.com/coryasilva/Leaflet.ExtraMarkers/blob/master/src/assets/css/leaflet.extra-markers.css
+*/
+.marker-active {
+  background-position: -72px 0 !important;
+}
+
+/* Storymap logo image above the title */
+#logo {
+  height: 40px;
+  line-height: 30px;
+  text-align: center;
+  padding: 10px;
+  max-width: 100%;
+}
+
+#logo img {
+  max-height: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+#header {
+  padding: 5px 0;
+  text-align: center;
+  color: #333;
+  font-family: 'Cinzel', serif;
+}
+
+/* Storymap title & subtitle */
+h1 {
+  margin: 0;
+  font-family: 'Cinzel', serif;
+  font-size: 2.2rem;
+}
+
+h2 {
+  margin: 0;
+  font-family: 'Proza Libre', serif;
+  font-size: 1.1em;
+  font-weight: normal;
+}
+
+h3 {
+  margin: 0;
+  font-family: 'Cinzel', serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+h4 {
+  margin: 0;
+  font-family: 'Proza Libre', sans-serif;
+  font-size: 0.8rem;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.info {
+  background:#fff;
+  position:absolute;
+  top:10px;
+  right:10px;
+  border-radius:2px;
+  }
+.info .item {
+  display:block;
+  border-bottom:1px solid #eee;
+  padding:10px;
+  text-decoration:none;
+  }
+  .info .item small { color:#888; }
+  .info .item:hover,
+  .info .item.active { background:#f8f8f8; }
+  .info .item:last-child { border-bottom:none; }
+
+.leaflet-popup-content {
+  width: 600px;    
+  height: 550px;
+}
+
+.tabs {
+  position:relative;
+  min-height:200px;
+  clear:both;
+  margin:25px 0;
+}
+.tab {
+  float:left;
+  display: none;
+}
+.tab:first-of-type {
+  display: inline-block;
+}
+.tabs-link {
+  position: absolute;
+  top: -10px;
+  height: 20px;
+  left: 0px;
+}
+.tab-link {
+  background:#eee;
+  display: inline-block;
+  padding:10px;
+  border:1px solid #ccc;
+  margin-left:-1px;
+  position:relative;
+  list-style-type: none;
+  left:1px;
+  top:1px;
+  cursor:pointer;
+}
+.tab-link {
+  background:#f8f8f8;
+}
+.content {
+  height:500px;
+  max-width:600px;
+  align-items: center;
+  text-align: center;
+  background:white;
+  position:absolute;
+  top: 40px;
+  left:0;
+  right:0;
+  bottom:0;
+  padding:20px;
+  border:1px solid #ccc;
+  overflow: auto;
+}
+
+.tab:target {
+  display: block;
+}
+
+#myVideo {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  z-index: -100;
+}
+

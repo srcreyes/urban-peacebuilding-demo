@@ -1,0 +1,6 @@
+# urban-peacebuilding
+Cities have become the new battleground of conflict and violence, and they need a unique set of rebuilding tools that are relevant to the urban setting of the conflict and the urban requirement of peacebuilding. To identify these tools, it is imperative to examine the social use of urban spaces and places in relation to peace formation and conflict promotion. This geoportal archives geolocations, photographs, and videos of several key sites during the conflict. It will also include written and oral narratives about these urban sites from historical and official documents and interviews with everyday people. The purpose of this geoportal is to record and examine the physical and symbolic post-conflict transformation of these sites for the use of students, researchers, civil society members, and policymakers working on making peacebuilding policies more relevant to the urban context and local aspirations of conflict-affected cities.
+
+The interactive map on this website was based on the Leaflet Storymaps from the Hands-On Data Visualization's Leaflet Storymaps with Google Sheets (https://handsondataviz.org/leaflet-storymaps-with-google-sheets.html), with some modifications.
+(Please take note that we are still cleaning up the codes!)
+

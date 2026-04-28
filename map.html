@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no"/>
+  <link rel="icon" type="image/png" href="./earth-asia-solid.png">
+  <title>The Marawi Siege</title>
+
+  <!-- Load Leaflet CSS and JS-->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+  <!-- Load Leaflet basemap providers -->
+  <script src="https://unpkg.com/leaflet-providers@1.10.2/leaflet-providers.js"></script>
+
+  <!-- Load jQuery  -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+  <!-- Load PapaParse -->
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script>
+
+  <!-- Load Lightbox -->
+  <script src="scripts/lightbox/js/lightbox.js"></script>
+  <link rel="stylesheet" href="scripts/lightbox/css/lightbox.css" />
+
+  <!-- Load Font-Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="markers/leaflet.extra-markers.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-desktop.css">
+  <link rel="stylesheet" href="css/loader.css">
+
+  <!-- Load Google Fonts -->
+  <link
+  href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Proza+Libre:ital@0;1&display=swap" 
+  rel="stylesheet"
+  />
+  
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <style>
+    img {  
+    text-align: center;
+    max-width: 70%;  
+    align-self: center;  
+    }  
+  </style>
+  
+
+</head>
+
+<body>
+
+  <div id="title">
+    <div id="logo"></div>
+      <a href='https://urban-peacebuilding.github.io/' id="navbar__logo"><i class="fas fa-home"></i></br>
+        <small> Home - Urban Peacebuilding </small>
+      </a>
+    <div id="header"></div>    
+  </div>
+
+  <div id="narration">
+    <div id="contents">
+      <div id="top"></div>
+    </div>
+  </div>
+
+  <div class="loader">Loading...</div>
+  <div id="map"></div>
+  
+  <script type="text/javascript">
+    // Create the Leaflet map with a generic start point
+    var map = L.map('map', {
+      center: [0, 0],
+      zoom: 1,
+      scrollWheelZoom: true,
+      zoomControl: false,
+      tap: true
+    });
+  </script>
+
+  <script type="text/javascript" src="google-doc-url.js"></script>
+  <script type="text/javascript" src="markers/leaflet.extra-markers.min.js"></script>
+  <script type="text/javascript" src="scripts/constants.js"></script>
+  <script type="text/javascript" src="scripts/jquery.csv.js"></script>
+  <script type="text/javascript" src="scripts/storymap.js"></script>
+  
+</body>
+</html>
